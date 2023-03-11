@@ -11,6 +11,11 @@ function App() {
       })
     })
    }}>clickhere</button>
+   <button onClick={() => {
+    Firebase.firestore().collection('students').doc('32oFcY5mF9b1FkGA0jUp').delete().then(() => {
+      console.log("deleted successfully")
+    })
+   }}>add</button>
   </div>
   );
 }
